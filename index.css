@@ -1,0 +1,62 @@
+@font-face {
+  font-family: 'ZillaSlab';
+  src: url('/res/ZillaSlab-LightItalic.ttf') format('truetype');
+}
+
+:root {
+  --primary: #262626;
+  --secundary: #f2f4f8;
+
+  background-color: var(--primary);
+  color: var(--secundary);
+  font-family: 'ZillaSlab', serif;
+}
+
+.main-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  gap: 2vh;
+}
+
+.list-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 50px;
+}
+
+.image {
+  height: 60vh;
+  border-radius: 10px;
+  box-shadow: 5px 10px 5px #161616;
+}
+
+.list {
+  list-style: none;
+  font-size: 1.5rem;
+}
+
+.list li {
+  padding-bottom: 5px;
+}
+
+.underline-effect {
+  position: relative;
+  text-decoration: none;
+}
+
+.underline-effect:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.2rem;
+}
+
+a:link {
+  text-decoration: none;
+  color: var(--secundary);
+}
+
+a:visited {
+  text-decoration: none;
+  color: var(--secundary);
+}
