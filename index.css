@@ -4,12 +4,14 @@
 }
 
 :root {
-  --primary: #262626;
-  --secundary: #f2f4f8;
+  --black: #262626;
+  --white: #f2f4f8;
+  color-scheme: light dark;
 
-  background-color: var(--primary);
-  color: var(--secundary);
+  background-color: light-dark(var(--white), var(--black));
+  color: light-dark(var(--black), var(--white));
   font-family: 'ZillaSlab', serif;
+
 }
 
 .main-container {
@@ -53,10 +55,10 @@
 
 a:link {
   text-decoration: none;
-  color: var(--secundary);
+  color: light-dark(var(--black), var(--white));
 }
 
 a:visited {
   text-decoration: none;
-  color: var(--secundary);
+  color: light-dark(var(--black), var(--white));
 }
