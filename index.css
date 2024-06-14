@@ -11,6 +11,8 @@
   background-color: light-dark(var(--white), var(--black));
   color: light-dark(var(--black), var(--white));
   font-family: 'ZillaSlab', serif;
+  overflow: hidden;
+  height: 100%;
 
 }
 
